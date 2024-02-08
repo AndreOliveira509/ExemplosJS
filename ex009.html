@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <label for="txtlil">Velocidade limite</label>
+    <input type="number" name="txtlit" id="txtlit"><br>
+    <label for="txtvel">Velocidade do carro</label>
+    <input type="number" name="txtvel" id="txtvel"> km/h <br>
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="res"></div>
+<script>
+    function clicar(){
+        var txtvl = document.getElementById('txtvel')
+        var vel = Number(txtvl.value)
+        var txtlit = document.getElementById('txtlit')
+        var lit = Number(txtlit.value)
+        var res = document.getElementById('res')
+        if(vel > lit){
+            res.innerHTML = "<p> Acima do limite, Multado! </p>"
+            res.innerHTML += "<p> Preste mais atenção </p>"
+        } else{
+            res.innerHTML = "<p> Dentro do limite </p>"
+            res.innerHTML += "<p> Sempre ande com segunrança </p>"
+        }      
+    
+    }   
+</script>
+
+</body>
+</html>
