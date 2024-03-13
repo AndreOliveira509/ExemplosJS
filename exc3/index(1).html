@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #img {
+            width: 100%;
+            height: 87.6vh;
+            background: black url("img/2c933fdd5a3b0a5f8a51a0f44eb0f619(1).jpg") top center/cover no-repeat;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: gray;
+        }
+
+        #menu img {
+            width: 100px;
+        }
+    </style>
+    <script>
+        function entrar(element) {
+            element.style.transform = 'scale(1.1)';
+        }
+        function sair(element) {
+            element.style.transform = 'scale(1)';
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="img">
+        </div>
+        <div id="menu">
+            <img src="icons/iniciar.png" onmouseenter="entrar(this)" onmouseout="sair(this)" class="icon">
+            <img src="icons/caixa.png" onmouseenter="entrar(this)" onmouseout="sair(this)" class="icon">
+            <img src="icons/navegador.png" onmouseenter="entrar(this)" onmouseout="sair(this)" class="icon">
+            <img src="icons/usuario.png" onmouseenter="entrar(this)" onmouseout="sair(this)" class="icon">
+            <img src="icons/datahora.png" onmouseenter="entrar(this)" onmouseout="sair(this)" class="icon">
+            <img src="icons/config.png" onmouseenter="entrar(this)" onmouseout="sair(this)" class="icon">
+            <img src="icons/ferramenta.png" onmouseenter="entrar(this)" onmouseout="sair(this)" class="icon">
+            <img src="icons/cadeado.png" onmouseenter="entrar(this)" onmouseout="sair(this)" class="icon">
+            <img src="icons/alerta.png" onmouseenter="entrar(this)" onmouseout="sair(this)" class="icon">
+            <img src="icons/lixeira.png" onmouseenter="entrar(this)" onmouseout="sair(this)" class="icon">
+        </div>
+    </div>
+
+</body>
+
+</html>
